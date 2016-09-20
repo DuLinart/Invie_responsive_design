@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Allerta" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/invie.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+	<title>Invie - tus mejores guitarras!!</title>
+</head>
+<body>
+	<header id="header" class="header background"> <!-- header -->
+	<div class="contenedor">
+		<figure class="logotipo">
+  		<img src="images/invie.png" width="186" height="60" alt="Invie logotipo"> <!-- logotipo -->
+  	</figure>
+    <span class="icon-menu burguer-button" id="burguer-button"></span>
+  	<nav class="menu" id="menu">
+  		<ul>
+  			<li>
+  				<a href="index.html">Home</a>
+  			</li>
+  			
+  			<li>
+  				<a href="index.html#guitarras">Guitarras</a>
+  			</li>
+  			<li>
+  				<a href="/precios.html">Precios</a>
+  			</li>
+  		</ul>
+  	</nav>
+	</div>
+  	<!-- menu -->
+  </header>
+   
+   <section class="tabla">
+   	
+   	<div class="contenedor">
+   	 <table>
+   		<thead>
+   			<tr>
+   				<th>Modelo</th>
+   				<th>Precio</th>
+   				<th>Descripción</th>
+          <th>Modelo</th>
+          <th>Precio</th>
+          <th>Descripción</th>
+   			</tr>
+   		</thead>
+   		<tbody>
+   			<tr>
+   				<td>Invie Classic</td>
+   				<td>$100.00</td>
+   				<td>una guitarra muy pro</td>
+          <td>Invie Classic</td>
+          <td>$100.00</td>
+          <td>una guitarra muy pro</td>
+   			</tr>
+   			<tr>
+   				<td>Invie Classic</td>
+   				<td>$100.00</td>
+   				<td>una guitarra muy pro</td>
+          <td>Invie Classic</td>
+          <td>$100.00</td>
+          <td>una guitarra muy pro</td>
+   			</tr>
+   			<tr>
+   				<td>Invie Classic</td>
+   				<td>$100.00</td>
+   				<td>una guitarra muy pro</td>
+          <td>Invie Classic</td>
+          <td>$100.00</td>
+          <td>una guitarra muy pro</td>
+   			</tr>
+   		</tbody>
+   	</table>
+   	</div>
+   		
+   </section>
+
+  <footer class="footer">
+  	<div class="contenedor">
+  		<div class="contacto">
+  		<img src="images/invie-white.png" alt="logotipo Invie blanco">
+  		<a href="tel:+52302456789"> <strong>Teléfono</strong> <span> 302456789</span></a>
+  		<a href="mailto:eduardo@linarte.mx<"> <strong>Contacto</strong> <span>eduardo@linarte.mx</span></a>
+  		
+  	</div>
+    <form class="formulario">
+    	<div class="col1">
+    		<label for="nombre">Nombre</label>
+    	<input type="text" required="" placeholder="Escribe tu nombre" id="nombre" />
+    	<label for="email">Email</label>
+    	<input type="email" required="" id="email" />
+
+    	<div class="sexo">
+    		<label for="mujer">
+    		<input checked="" type="radio" name="sexo" id="mujer" value="mujer" /> mujer
+
+    	</label>
+    	<label for="hombre">
+    		<input type="radio" name="sexo" id="hombre" value="hombre" /> hombre
+    		
+    	</label>
+    	</div>
+    	<div class="intereses">
+
+    		<label for="cotizacion">
+    			<input checked="" type="checkbox" name="intereses" value="cotizacion" id="cotizacion"> Cotización
+    		</label>
+    		<label for="reclamos">
+    			<input type="checkbox" name="intereses" id="reclamos" value="reclamos"> Reclamos
+    		</label>
+    		<label for="comentarios">
+    			<input type="checkbox" name="intereses" id="comentarios" value="comentarios"> Comentarios
+    		</label>
+    		<label for="otros">
+    			<input type="checkbox" name="intereses" value="otros" id="otros"> Otros
+    		</label>
+    	</div>
+    	</div>
+    	<div class="col2">
+    		<label for="comentarios">Comentarios</label>
+    		<textarea id="comentarios" cols="30" rows="7" name="comentarios"></textarea>
+    		<input type="submit" value="Enviar" class="button" />
+    	</div>
+    </form>
+  	</div>
+  </footer>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.6.2/blazy.js">
+    
+  </script>
+  <script type="text/javascript">
+  var $burgerButton = document.getElementById ('burguer-button');
+    var $menu = document.getElementById ('menu');
+
+     function toggleMenu ()
+    {
+      $menu.classList.toggle ('active');
+    }
+
+
+
+  var consulta = window.matchMedia('(max-width:500px)');
+    consulta.addListener(mediaQuery);
+
+    function mediaQuery ()
+    {
+      if (consulta.matches) {
+      console.log ('se cumplió la condición');
+      $burgerButton.addEventListener ('touchstart', toggleMenu);
+      
+    }
+    else
+    {
+      $burgerButton.removeEventListener ('touchstart', toggleMenu);
+      console.log ('no se cumplió la condición');
+      }
+    }
+
+     mediaQuery();
+    
+
+    // lazy loading images
+
+    var bLazy = new Blazy({
+    selector: "img"
+    });
+
+
+    // $burgerButton.addEventListener ('touchstart', togglemenu);
+      
+    // function togglemenu ()
+    // {
+    //   $menu.classList.toggle ('active');
+    // }
+
+
+  </script>
+</body>
+</html>
