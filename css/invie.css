@@ -131,6 +131,10 @@ input, textarea {
 	outline: 0px;
 }
 
+.col1 input {
+	margin: 10px 0;
+}
+
 input:focus, textarea:focus{
 	background: lightgray;
 }
@@ -311,7 +315,10 @@ input:focus, textarea:focus{
 	flex-wrap: wrap;
 	margin: 10px 10px 10px 0px;
 	align-items: center;
+
 }
+
+
 
 .formulario {
 	display: flex;
@@ -453,6 +460,10 @@ input:focus, textarea:focus{
 		margin: 0px;
 	}
 
+	.contacto {
+		text-align: -webkit-center;
+	}
+
 	.menu li:first-child{
 		margin: 0px;
 		border-top: 1px solid white;
@@ -469,6 +480,7 @@ input:focus, textarea:focus{
 	.contacto {
 		margin: 0px auto;
 		display: block;
+		text-align: -webkit-center;
 	}
 
 	.contacto a {
